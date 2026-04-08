@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Camera AI Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Camera AI Streaming</p>
+          <h1>Live Detection Dashboard</h1>
+          <p class="lead">
+            Browser รับภาพและ metadata ผ่าน WebSocket แล้ววาด overlay บน canvas แบบ frame-by-frame
+          </p>
+        </div>
+        <div class="status-panel">
+          <div><span>Status</span><strong id="connState">Connecting</strong></div>
+          <div><span>Frame</span><strong id="frameId">-</strong></div>
+          <div><span>Objects</span><strong id="objectCount">0</strong></div>
+        </div>
+      </section>
+
+      <section class="viewer-card">
+        <canvas id="videoCanvas" width="1280" height="720"></canvas>
+      </section>
+
+      <section class="legend">
+        <div class="legend-item"><span class="swatch"></span> Bounding boxes from metadata</div>
+        <div class="legend-item">Video transport: H.264 from Pi, JPEG/WebSocket only on AI server to browser</div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

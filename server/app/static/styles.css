@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --bg: #071417;
+  --panel: rgba(14, 34, 38, 0.86);
+  --panel-border: rgba(126, 249, 169, 0.18);
+  --text: #e9fff4;
+  --muted: #8fb7ab;
+  --accent: #7ef9a9;
+  --accent-2: #4ecdc4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(78, 205, 196, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(126, 249, 169, 0.12), transparent 20%),
+    linear-gradient(180deg, #051013 0%, #0b1f24 100%);
+}
+
+.layout {
+  width: min(1200px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.hero {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 0.95;
+}
+
+.lead {
+  max-width: 700px;
+  color: var(--muted);
+}
+
+.status-panel,
+.viewer-card,
+.legend {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+.status-panel {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+}
+
+.status-panel div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-panel span {
+  color: var(--muted);
+}
+
+.viewer-card {
+  padding: 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  background: #020607;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding: 14px 16px;
+  color: var(--muted);
+}
+
+.legend-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: var(--accent);
+}
+
+@media (max-width: 800px) {
+  .layout {
+    width: min(100vw - 20px, 1200px);
+    padding-top: 20px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
