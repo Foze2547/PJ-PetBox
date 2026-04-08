@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601149299942",
+    "project_id": "bobby-iot-e2e7d",
+    "storage_bucket": "bobby-iot-e2e7d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601149299942:android:173747dd942989ddbd2f27",
+        "android_client_info": {
+          "package_name": "com.company.appname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601149299942-toucahgsdovpdb8etaqojsvk6un03lqj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.appname",
+            "certificate_hash": "8e3a802f8ae9f98d4c65e1fcd030562e90ae93fe"
+          }
+        },
+        {
+          "client_id": "601149299942-qsfp88tpp0q9rds9vhl0amemdmcq7suv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjvSVLrQoRvprzK8z8YFJNFsW5Mefjm48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601149299942-qsfp88tpp0q9rds9vhl0amemdmcq7suv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

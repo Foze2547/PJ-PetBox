@@ -1,0 +1,42 @@
+name: petbox
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_sign_in: ^6.2.2
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.6.1
+  model_viewer_plus: ^1.9.3
+
+  http: ^1.2.2
+  mqtt_client: ^10.5.0
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.2
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/image/Splash Screen .png
+    - lib/image/logo.png
+    - lib/image/google.png
+    - lib/image/Group 67.png
+    - lib/image/Robot in app no Speak.glb
+    - lib/image/Robot in app Speak.glb
+    - assets/models/robot.glb
+    - assets/models/robot_app_no_speak.glb
+    - assets/models/robot_app_speak.glb
+    - assets/models/robot_lite.glb
+    - assets/models/robot_lite_safe.glb
