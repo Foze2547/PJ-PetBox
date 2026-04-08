@@ -1,0 +1,17 @@
+[Unit]
+Description=Petbox Camera Numeric TCP Sender
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=pj
+Group=pj
+WorkingDirectory=/home/pj/ws/Petbox/camera_ai_streaming/pi_sender
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/pj/ws/Petbox/camera_ai_streaming/pi_sender/send_numeric_tcp.py --server-host 100.110.201.13 --server-port 9000 --width 960 --height 540 --fps 12 --jpeg-quality 70
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+[Unit]
+Description=Petbox TFT Eye Animation
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pj
+Group=pj
+WorkingDirectory=/home/pj/ws/Petbox
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/pj/ws/Petbox/JorTest_CM5.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

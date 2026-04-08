@@ -1,0 +1,50 @@
+ANN (Tentative)
+/ Machine Learning Models Recap and Roles of ANN
+	> Supervised Learning / Unsupervised Learning
+	> Classification / Regression objective
+	> ANN roles in both learning method
+
+/ ANN History
+	> Inspiration from Neurons
+	> Simulating neuron synapses with perceptron
+	> XOR Problem and perceptron limitation
+	> Multilayer Perceptron
+	> Multilayer Perceptron and the brains
+	> Why ANN?
+
+/ How ANN works
+	> forward propagation
+	> using ANN for classification / regression
+	> ANN as a feature extractor
+
+- Guiding ANN (Loss function)
+	> Recap supervised learning tasks: regression / classification
+	> Loss functions variation
+	> Roles of weights
+	> Reducing loss with gradient descent
+
+- Learning ANN (backpropagation)
+	> Learning weights, backpropagation
+	> Problem with step function
+	> Updating weights, optimization point of view (+ Learning Rate)
+	> ANN is non-convex optimization
+
+- Training ANN in practice
+	> What's wrong with gradient descent (full batch) 
+	> batch size and epochs
+	> optimizers and their variant
+
+- Activation Functions
+	> Why activation matters?
+	> Different activation functions
+	> Activations and gradient vanishing / exploding
+
+- Others ANN techniques
+	> Regularization (dropout, batch normalization)
+	> Weight Initialization
+
+- Demos ANN with Tensorflow
+	> Introduction to Tensorflow
+	> Creating ANN with Sequential API
+	> Creating ANN with Functinal API
+	> Configuring hyperparameters and training

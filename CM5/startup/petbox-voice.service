@@ -1,0 +1,19 @@
+[Unit]
+Description=Petbox Voice Assistant (Thai Speech Recognition)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pj
+Group=pj
+WorkingDirectory=/home/pj/ws/Petbox
+EnvironmentFile=/home/pj/ws/Petbox/.env
+ExecStart=/home/pj/ws/Petbox/.venv/bin/python /home/pj/ws/Petbox/thai_speech_rec.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

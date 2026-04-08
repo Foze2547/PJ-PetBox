@@ -1,0 +1,17 @@
+[Unit]
+Description=Petbox Unified Daemon (Eyes, Camera, Audio)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=pj
+Group=pj
+WorkingDirectory=/home/pj/ws/Petbox
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pj/ws/Petbox/run_petbox.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

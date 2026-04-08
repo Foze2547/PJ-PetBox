@@ -1,0 +1,16 @@
+{
+  "pins": {
+    "DIN_SPEAKER": 25,
+    "ON_OFF_AUDIO": 45,
+    "LRCLK": 26,
+    "DOUT": 27,
+    "BCLK": 49
+  },
+  "audio": {
+    "alsa_device": "auto",
+    "sample_rate": 48000,
+    "channels": 2,
+    "tone_freq_hz": 1000.0,
+    "tone_duration_sec": 2.0
+  }
+}
